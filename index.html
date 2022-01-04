@@ -16,6 +16,37 @@
 </head>
 
 <body>
+    <!---------------- Messenger Chat plugin Code ---------------------------------------------------------->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "110750151481426");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!---------------- Messenger Chat plugin Code ---------------------------------------------------------------------->
     <!-------------------------------------------------------Navbar ---------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -404,8 +435,9 @@
                         <div class="ps-md-5">
                             <!-- Heading -->
                             <div class="mb-7">
-                                <span class="text-cap">Get started</span>
-                                <h3>Start quickly</h3>
+                                <span class="text-cap">Join our heightening network of influencers to be the face
+                                    of</span>
+                                <h3>The Next LEADING BRAND 🥳</h3>
                             </div>
                             <!-- End Heading -->
 
@@ -417,9 +449,11 @@
                                         role="tab" aria-controls="stepServicesOne" aria-selected="true">
                                         <span class="step-icon step-icon-soft-secondary">1</span>
                                         <div class="step-content">
-                                            <h6 class="step-title">Industry-leading documentation</h6>
-                                            <p class="step-text">Achieve virtually any design and layout from within the
-                                                one template.</p>
+                                            <h6 class="step-title">Monetize your Social Potential</h6>
+                                            <p class="step-text">We acknowledged your hard work and aftermath in
+                                                building a strong engaging community and now we will enable you to
+                                                monetize it.
+                                            </p>
                                         </div>
                                     </a>
                                 </li>
@@ -430,23 +464,26 @@
                                         aria-controls="stepServicesTwo" aria-selected="false">
                                         <span class="step-icon step-icon-soft-secondary">2</span>
                                         <div class="step-content">
-                                            <h6 class="step-title">Support for the developer community</h6>
-                                            <p class="step-text">We actively contribute to open-source projects—giving
-                                                back to the community through development, patches, and sponsorships.
+                                            <h6 class="step-title">Marketing Opportunities</h6>
+                                            <p class="step-text">By joining our network, we will notify you every time
+                                                we have an opportunity for you that matches your category and
+                                                requirements.
                                             </p>
                                         </div>
                                     </a>
                                 </li>
 
                                 <li class="step-item" role="presentation">
-                                    <a class="step-content-wrapper" href="#stepServicesThree" id="stepServicesThree-tab"
+                                    <a class="step-content-wrapper" href="#stepSrvicesThree" id="stepServicesThree-tab"
                                         data-bs-toggle="tab" data-bs-target="#stepServicesThree" role="tab"
                                         aria-controls="stepServicesThree" aria-selected="false">
                                         <span class="step-icon step-icon-soft-secondary">3</span>
                                         <div class="step-content">
-                                            <h6 class="step-title">Explore the Snippets tools</h6>
-                                            <p class="step-text">Find what you need in one template and combine features
-                                                at will.</p>
+                                            <h6 class="step-title">100% support and Transparency</h6>
+                                            <p class="step-text">Not just we notify you of forthcoming shots but will
+                                                assist you till the last step of the execution by maintaining
+                                                transparency.
+                                            </p>
                                         </div>
                                     </a>
                                 </li>
@@ -560,7 +597,7 @@
                             </span>
 
                             <h5 class="text-white">Call us:</h5>
-                            <p class="text-white-70 mb-0">+1 (062) 109-9222</p>
+                            <p class="text-white-70 mb-0">+91 84003 44132</p>
                         </div>
 
                         <!-- End Info -->
