@@ -519,13 +519,13 @@
                         </div>
                         <!-- End Heading -->
 
-                        <form>
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbzatuxvzGcNnb-NHbu_J_dkICnde7M1hsJGpYxIPR4yfEcgj_KawFl5Z8Gw9IfxgfLm/exec">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <!-- Form -->
                                     <div class="mb-4">
                                         <label class="form-label visually-hidden" for="contactEmail">Your name</label>
-                                        <input type="text" class="form-control form-control-lg" name="name"
+                                        <input type="text" class="form-control form-control-lg" name="Name"
                                             id="contactName" placeholder="Your name" aria-label="Your name" required
                                             data-msg="Please enter your name.">
                                     </div>
@@ -537,7 +537,7 @@
                                     <!-- Form -->
                                     <div class="mb-4">
                                         <label class="form-label visually-hidden" for="contactEmail">Your email</label>
-                                        <input type="email" class="form-control form-control-lg" name="email"
+                                        <input type="email" class="form-control form-control-lg" name="Email"
                                             id="contactEmail" placeholder="Your email" aria-label="Your email" required
                                             data-msg="Please enter a valid email address.">
                                     </div>
@@ -549,7 +549,7 @@
                                     <!-- Form -->
                                     <div class="mb-4">
                                         <label class="form-label visually-hidden" for="contactDetails">Detail</label>
-                                        <textarea class="form-control form-control-lg" id="contactDetails" rows="5"
+                                        <textarea class="form-control form-control-lg" name="Message" id="contactDetails" rows="5"
                                             placeholder="Tell us more about detail"
                                             aria-label="Tell us more about detail"></textarea>
                                     </div>
@@ -733,6 +733,7 @@
             const typed = PBCore.components.PBTyped.init('.js-typedjs')
         })()
     </script>
+   
 </body>
 
 
