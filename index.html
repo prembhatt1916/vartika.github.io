@@ -519,7 +519,9 @@
                         </div>
                         <!-- End Heading -->
 
-                        <form method="post" action="https://script.google.com/macros/s/AKfycbzatuxvzGcNnb-NHbu_J_dkICnde7M1hsJGpYxIPR4yfEcgj_KawFl5Z8Gw9IfxgfLm/exec">
+                        <form method="post"
+                            action="https://script.google.com/macros/s/AKfycbwK9rURxIH_3URvqBWISo1cg8TmxYrZEo_pn741XsUTx2LXdnI6QaqBnfScTkJLFuYf/exec"
+                            id="my-form">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <!-- Form -->
@@ -549,8 +551,8 @@
                                     <!-- Form -->
                                     <div class="mb-4">
                                         <label class="form-label visually-hidden" for="contactDetails">Detail</label>
-                                        <textarea class="form-control form-control-lg" name="Message" id="contactDetails" rows="5"
-                                            placeholder="Tell us more about detail"
+                                        <textarea class="form-control form-control-lg" name="Message"
+                                            id="contactDetails" rows="5" placeholder="Tell us more about detail"
                                             aria-label="Tell us more about detail"></textarea>
                                     </div>
                                     <!-- End Form -->
@@ -560,7 +562,8 @@
                             <!-- End Row -->
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                                <button type="submit" data-bs-dismiss="alert" data-bs-target="#my-alert"
+                                    class="btn btn-lg btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -733,7 +736,9 @@
             const typed = PBCore.components.PBTyped.init('.js-typedjs')
         })()
     </script>
-   
+    
+        
+
 </body>
 
 
